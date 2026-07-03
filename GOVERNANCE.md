@@ -36,4 +36,3 @@ a human attestation.
 Governance changes follow the same pull-request and CODEOWNERS review process.
 Repository settings and applicable law take precedence if they conflict with
 this document.
-

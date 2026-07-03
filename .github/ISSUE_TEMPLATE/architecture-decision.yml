@@ -35,4 +35,3 @@ body:
           required: true
     validations:
       required: true
-

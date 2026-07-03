@@ -15,4 +15,3 @@ Support is provided on a best-effort basis. Opening an issue does not establish
 a service-level agreement, maintenance commitment, compatibility guarantee, or
 release schedule. Repository documentation and release notes define the
 currently published support surface.
-

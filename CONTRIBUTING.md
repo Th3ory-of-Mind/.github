@@ -26,4 +26,3 @@ repository maintainers identified through CODEOWNERS and repository settings.
 
 By contributing, you agree that your contribution is licensed under this
 repository's license and that you will follow the Code of Conduct.
-

@@ -24,4 +24,3 @@ credentials, or production data. Maintainers may remove content, restrict
 participation, or take other proportionate action after reviewing available
 context. Enforcement decisions remain with authorized humans and will respect
 privacy as far as practical.
-
