@@ -1,4 +1,5 @@
 from pathlib import Path
+import re
 import subprocess
 import sys
 
@@ -129,3 +130,16 @@ def test_verifier_entrypoint_completes_successfully() -> None:
         check=False,
     )
     assert result.returncode == 0, result.stdout + result.stderr
+
+
+def test_workflow_actions_are_pinned_to_immutable_commits() -> None:
+    workflow = read(".github/workflows/validate.yml")
+    uses_lines = [
+        line.strip() for line in workflow.splitlines() if line.strip().startswith("uses:")
+    ]
+    assert len(uses_lines) == 2
+    for line in uses_lines:
+        assert re.fullmatch(
+            r"uses: actions/(?:checkout|setup-python)@[0-9a-f]{40}  # v\d+\.\d+\.\d+",
+            line,
+        )
