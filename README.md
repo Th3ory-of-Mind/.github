@@ -1,174 +1,48 @@
 # Th3ory of Mind
 
-![License](https://img.shields.io/badge/License-Apache%202.0-blue)
-![Status](https://img.shields.io/badge/Status-Active-green)
+Th3ory of Mind is developing governance-first foundations for composable AI
+orchestration. The work emphasizes explicit contracts, least privilege,
+provenance, human authority, and safe evolution.
 
-Building governance-first AI orchestration systems that enable secure, scalable, and continuously evolving agent ecosystems.
+## Organization profile
 
----
+This repository is the public organization profile and shared community-health
+source: https://github.com/Th3ory-of-Mind/.github
 
-## Vision
+| Area | Purpose | Public status |
+| --- | --- | --- |
+| Organization governance | Contribution, security, conduct, support, ownership, and decision policy | Active in this profile |
+| Ingestion foundation | Foundational ingestion contracts and validation | Merged |
+| Registry milestone | Governed registration and discovery contracts | In progress |
+| Orchestration runtime | Execution and coordination components | Not publicly released |
+| Reference implementations | End-to-end examples | Not publicly released |
 
-Th3ory of Mind is an open ecosystem focused on the next generation of AI orchestration.
+The map distinguishes milestones from repositories. A component listed here is
+not a claim that a public repository, package, service, or supported release
+exists. Public availability is represented only by a working repository link.
 
-Inspired by the cognitive concept of Theory of Mind—the ability to reason about the beliefs, intentions, knowledge, and perspectives of others—this organization explores how intelligent systems can coordinate, govern, secure, and evolve increasingly complex collections of agents, skills, and workflows.
+## Current milestone status
 
-Our goal is not simply to build agents.
+| Milestone | Status |
+| --- | --- |
+| Ingestion foundation | Merged |
+| Registry milestone | In progress |
+| Runtime and reference components | Not publicly released |
 
-Our goal is to build systems capable of building, governing, securing, and improving entire AI ecosystems.
+## Principles
 
----
+- Governance is a design input, with recorded decisions and human approval.
+- Security boundaries and permissions are explicit and least-privileged.
+- Public contracts evolve through ADR, migration, validation, and rollback gates.
+- Capabilities remain modular and provider-agnostic where practical.
+- Automation can assist, but cannot replace accountable human authority.
 
-## Core Principles
+## Participate
 
-### Governance First
-
-Governance is treated as a foundational capability rather than an afterthought.
-
-Every orchestrator, skill, and agent should operate within defined policies, controls, and audit mechanisms.
-
-### Security by Design
-
-Authentication, authorization, tenant isolation, trust boundaries, and secure communication are integrated throughout the architecture.
-
-### Modular Composition
-
-Capabilities are packaged into reusable skills that can be deployed, upgraded, versioned, and reused across multiple ecosystems.
-
-### Continuous Evolution
-
-Systems should be capable of identifying opportunities for improvement and proposing enhancements through governed feedback loops.
-
-### Platform Agnostic
-
-The ecosystem is designed to support multiple AI providers, execution environments, deployment models, and future technologies.
-
----
-
-## Ecosystem Architecture
-
-```text
-Th3ory of Mind
-│
-├── AI Orchestrator OS
-│
-├── Governance
-│   └── governance-core
-│
-├── Security
-│   ├── security-core
-│   └── multi-tenant-security
-│
-├── Skills
-│   ├── skill-sdk
-│   ├── skill-creator
-│   ├── skill-creator-sdk
-│   └── skill-registry
-│
-├── Orchestration
-│   ├── orchestrator-sdk
-│   └── orchestrator-creator
-│
-├── Agents
-│   ├── agent-registry
-│   └── reference-agents
-│
-└── Deployments
-    ├── deployment-framework
-    └── reference-implementations
-```
-
----
-
-## Repositories
-
-### Core Platform
-
-| Repository | Purpose |
-|------------|---------|
-| ai-orchestrator-os | Central orchestration framework |
-| governance-core | Governance policies and controls |
-| security-core | Authentication, authorization, and trust |
-| multi-tenant-security | Tenant isolation and segmentation |
-
-### Skills
-
-| Repository | Purpose |
-|------------|---------|
-| skill-sdk | Standards and tooling for skills |
-| skill-creator | Skill generation and lifecycle management |
-| skill-creator-sdk | Tooling for skill generation systems |
-| skill-registry | Skill catalog and dependency management |
-
-### Orchestration
-
-| Repository | Purpose |
-|------------|---------|
-| orchestrator-sdk | Orchestrator development toolkit |
-| orchestrator-creator | Orchestrator generation framework |
-
-### Agents
-
-| Repository | Purpose |
-|------------|---------|
-| agent-registry | Agent catalog and discovery |
-| reference-agents | Example agent implementations |
-
-### Deployment
-
-| Repository | Purpose |
-|------------|---------|
-| deployment-framework | Deployment and operational tooling |
-| reference-implementations | End-to-end reference architectures |
-
----
-
-## Current Status
-
-| Area | Status |
-|--------|--------|
-| Architecture | Active |
-| Governance Design | In Progress |
-| Security Design | In Progress |
-| Skill Framework | Planned |
-| Registry Frameworks | Planned |
-| Reference Implementations | Planned |
-
----
-
-## Roadmap
-
-### Phase 1 — Foundation
-
-- Repository structure
-- Governance architecture
-- Security architecture
-- Skill standards
-- Registry design
-
-### Phase 2 — Core Platform
-
-- AI Orchestrator OS
-- Skill lifecycle management
-- Registry services
-- Security services
-
-### Phase 3 — Ecosystem Expansion
-
-- Orchestrator generation
-- Skill generation
-- Multi-agent coordination
-- Multi-tenant deployments
-
-### Phase 4 — Autonomous Evolution
-
-- Ecosystem self-analysis
-- Improvement recommendation systems
-- Governed self-optimization
-- Orchestrator-assisted ecosystem growth
-
----
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before proposing a change. Use the
+structured issue forms and never publish secrets or production data. Report
+suspected vulnerabilities privately by following [SECURITY.md](SECURITY.md).
 
 ## License
 
-Unless otherwise specified, repositories within the Th3ory of Mind organization are licensed under the Apache License 2.0.
+This repository is licensed under the [Apache License 2.0](LICENSE).

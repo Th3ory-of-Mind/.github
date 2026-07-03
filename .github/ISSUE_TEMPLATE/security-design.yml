@@ -1,0 +1,40 @@
+name: Security design
+description: Discuss a security design without disclosing a vulnerability.
+title: "[Security design]: "
+labels: ["security", "design"]
+body:
+  - type: markdown
+    attributes:
+      value: "Suspected vulnerabilities must be reported privately according to SECURITY.md. Do not post secrets or production data."
+  - type: textarea
+    id: boundary
+    attributes:
+      label: Assets and trust boundaries
+      description: Describe protected assets, actors, entry points, and trust changes.
+    validations:
+      required: true
+  - type: textarea
+    id: threats
+    attributes:
+      label: Threats and mitigations
+      description: Describe abuse cases, controls, residual risk, and validation.
+    validations:
+      required: true
+  - type: textarea
+    id: permissions
+    attributes:
+      label: Permissions and data handling
+      description: Explain least privilege, retention, isolation, and failure behavior.
+    validations:
+      required: true
+  - type: checkboxes
+    id: disclosure
+    attributes:
+      label: Public disclosure check
+      options:
+        - label: This is design discussion, not a vulnerability report.
+          required: true
+        - label: I included no secrets, credentials, personal information, or production data.
+          required: true
+    validations:
+      required: true

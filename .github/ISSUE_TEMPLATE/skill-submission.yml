@@ -1,0 +1,44 @@
+name: Skill submission
+description: Propose a reusable skill and its lifecycle metadata.
+title: "[Skill]: "
+labels: ["skill", "submission"]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include secrets, credentials, personal information, or production data."
+  - type: input
+    id: identity
+    attributes:
+      label: Skill name and version
+    validations:
+      required: true
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose and boundaries
+      description: State inputs, outputs, permissions, and explicit non-goals.
+    validations:
+      required: true
+  - type: textarea
+    id: provenance
+    attributes:
+      label: Provenance and dependencies
+      description: Identify generated or third-party material, licenses, and dependencies.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation and rollback
+      description: Explain tests, failure handling, removal, and compatibility.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Data safety
+      options:
+        - label: Examples are synthetic and contain no secrets or production data.
+          required: true
+    validations:
+      required: true
