@@ -1,0 +1,38 @@
+name: Architecture decision
+description: Propose an ADR for a material technical or governance decision.
+title: "[ADR]: "
+labels: ["architecture", "needs-adr"]
+body:
+  - type: markdown
+    attributes:
+      value: "Use synthetic examples. Do not include secrets, credentials, or production data."
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and decision drivers
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options considered
+      description: Compare at least the proposed approach and status quo.
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: Proposed decision and consequences
+      description: Include risks, reversibility, contract impact, and validation.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Data safety
+      options:
+        - label: I included no secrets or production data.
+          required: true
+    validations:
+      required: true
+

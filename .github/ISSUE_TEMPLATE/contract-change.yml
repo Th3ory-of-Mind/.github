@@ -1,0 +1,41 @@
+name: Contract change
+description: Propose a change to a public interface, schema, policy, event, or manifest.
+title: "[Contract]: "
+labels: ["contract", "needs-adr"]
+body:
+  - type: markdown
+    attributes:
+      value: "Use synthetic examples only. Do not include secrets or production data."
+  - type: textarea
+    id: current
+    attributes:
+      label: Current and proposed contract
+      description: Describe the current behavior and exact proposed change.
+    validations:
+      required: true
+  - type: textarea
+    id: consumers
+    attributes:
+      label: Consumers and compatibility
+      description: Identify affected consumers and compatibility risks.
+    validations:
+      required: true
+  - type: textarea
+    id: migration
+    attributes:
+      label: Migration and rollback plan
+      description: Include adoption, validation, deprecation, and reversal.
+    validations:
+      required: true
+  - type: checkboxes
+    id: gates
+    attributes:
+      label: Governance gates
+      options:
+        - label: I will provide an ADR and migration plan before merge.
+          required: true
+        - label: I included no secrets or production data.
+          required: true
+    validations:
+      required: true
+
